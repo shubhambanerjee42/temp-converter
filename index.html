@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="background-image">
+        <img src="kim.jpg" alt="omkar" width="100%" height="100%">
+    </div>
+    <div class="custom-loader"></div>
+    <div id="content" style="display: none;">
+        <div class="container">
+            <button id="exitButton">Exit</button> <!-- Added exit button -->
+            <h1 class="heading" style="color: darkkhaki;">TEMPERATURE CONVERTER</h1>
+            <div class="box">
+                <div class="CONVERTER_FUNCTIONS_BOX">
+                    <div class="conversion-container">
+                        <select id="unitFrom" style="width: 150px; height: 50px;">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                        <select id="unitTo" style="width: 150px; height: 50px;">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="inputValue" placeholder="Enter the value">
+                    </div>
+                    <div class="buttons-container">
+                        <button id="convertButton">Convert</button>
+                        <button id="clearButton">Clear</button>
+                    </div>
+                    <div class="result-container">
+                        <input type="text" id="resultValue" placeholder="Converted result" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
